@@ -50,11 +50,17 @@
     </style>
 </head>
 <body>
-    {% include 'navbar.html' %}
+    {% include 'main.html' %}
+
+        {% block content %}
     <div class="container">
+        
         <h1>Welcome to StudyBud!</h1>
         <p>Your place to connect, share, and grow together. Join rooms, ask questions, and collaborate with fellow learners in a friendly environment.</p>
         <a href="#" class="cta-btn">Get Started</a>
+
+        
     </div>
+    {% endblock %}
 </body>
 </html>
