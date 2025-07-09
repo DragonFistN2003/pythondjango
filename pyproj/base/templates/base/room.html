@@ -4,10 +4,11 @@
     <title>Room</title>
 </head>
 <body>
-    {% include 'main.html' %}
+    {% extends 'main.html' %}
 
     {% block content %}
-    <h1>This is the simplest room page.</h1>
+    <h1>{{room.name}}</h1>
     {% endblock %}
+    
 </body>
 </html>
